@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: api-client-service-rest-template
+
+server:
+  port: 8080
+  name: localhost
+  domain: http://${server.name}:${server.port}
+
+logging:
+  level:
+    #org.springframework.web: DEBUG
+    com.template.springproject.controllers: DEBUG
+    com.template.springproject.config.LoggingInterceptor: DEBUG
