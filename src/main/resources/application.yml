@@ -1,0 +1,13 @@
+spring:
+#  profiles:
+#    active: h2
+  application:
+    name: crud-service-reactor-h2
+
+
+server.port: 8080
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.template.springproject.controllers: DEBUG
