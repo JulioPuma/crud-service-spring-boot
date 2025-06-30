@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>WebSocket con STOMP y SockJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+<body>
+<h2>Estado: <span id="estado"></span></h2>
+<button onclick="enviarEstado('EN PROCESO')">Cambiar a EN PROCESO</button>
+<button onclick="enviarEstado('FINALIZADO')">Cambiar a FINALIZADO</button>
+
+<script>
+    var socket = new SockJS('http://localhost:8080/ws');  // Se conecta a WebSocket
+    var stompClient = Stomp.over(socket);
+
+    stompClient.connect({}, function () {
+        console.log("Conectado a WebSocket");
+
+        // Escuchar actualizaciones en el topic "/topic/status"
+        stompClient.subscribe('/topic/status', function (message) {
+            document.getElementById("estado").innerText = message.body;
+        });
+    });
+
+    function enviarEstado(nuevoEstado) {
+        stompClient.send("/app/changeStatus", {}, nuevoEstado);
+    }
+</script>
+</body>
+</html>
