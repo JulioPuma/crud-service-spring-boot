@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: document-generator-apachepoi
+
+application:
+  available-documents:
+    - word
+    - pdf
+
+server.port: 8080
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.template.springproject: TRACE
+
+azure:
+  storage:
+    connection-string: ''
+    container-name: 'carpeta'
