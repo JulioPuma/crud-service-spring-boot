@@ -1,0 +1,27 @@
+spring:
+  sql:
+    init:
+      platform: h2
+      schema-locations: 'classpath:h2-scripts/schema-${spring.sql.init.platform}.sql'
+      data-locations: 'classpath:h2-scripts/data-${spring.sql.init.platform}.sql'
+      #continue-on-error: true
+  datasource:
+    url: jdbc:h2:mem:testdb # Usa una base de datos en memoria
+    username: sa # Usuario por defecto para H2
+    password: # Sin contraseña por defecto
+    driver-class-name: org.h2.Driver # Driver de H2
+
+  h2:
+    console:
+      enabled: true # Habilita la consola web de H2 para pruebas
+      #path: /h2-console #Si se necesita cambiar el path a la consola.
+
+  jpa:
+    hibernate:
+      ddl-auto: none # Actualiza el esquema de la base de datos automáticamente
+    show-sql: true # Muestra las consultas SQL en la consola
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect # Dialecto específico para H2
+        globally_quoted_identifiers: true #True: En caso de que las *tablas* usen palabras reservadas (user, default, etc)
+        globally_quoted_identifiers_skip_column_definitions: true #True: En caso de las *columnas* usen palabras reservadas (user, default, etc)
