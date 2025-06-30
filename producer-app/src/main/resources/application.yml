@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: producer-app
+  kafka:
+    bootstrap-servers: ${KAFKA_BROKER}
+
+server.port: 8080
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.template.springproject.controllers: DEBUG

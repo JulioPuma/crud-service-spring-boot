@@ -1,18 +1,17 @@
-#  Spring Project for Apache Kafka
+#  Base Project for Spring
 
-Project using docker, springboot and service to manage events like Apache Kafka.
+Project used like template for other projects.
 
 * Language: Java 17 
 * Framework: SpringBoot 3
 * Dependency management: Maven 3.6.3
 
-<img src="./docs/markdown/java17-logo.png" style="height: 50px; width:100px;"/>
-<img src="./docs/markdown/springboot.png" style="height: 50px; width:100px;"/>
+<img src="./src/main/resources/images/markdown/java17-logo.png" alt="MarineGEO circle logo" style="height: 50px; width:100px;"/>
+<img src="./src/main/resources/images/markdown/springboot.png" alt="MarineGEO circle logo" style="height: 50px; width:100px;"/>
 
 ## Dependencies
 
-- spring-boot-starter
-- spring-kafka
+- spring-boot-starter-web
 - lombok
 
 ## Package

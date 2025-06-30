@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: consumer-app
+  kafka:
+    bootstrap-servers: ${KAFKA_BROKER}
+    consumer:
+      group-id: my-group-id
+      auto-offset-reset: earliest
+
+server.port: 8080
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.template.springproject.controllers: DEBUG

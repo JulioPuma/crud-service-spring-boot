@@ -1,0 +1,69 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Página-1" id="77wAZI_73D1fhxlfjZWD">
+    <mxGraphModel dx="1925" dy="1188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qCatNY5HRqoVfFUYNV9--1" value="Apache Tomcat Server embedded" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="760" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--2" value="Controller" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=24;fontFamily=Verdana;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="170" y="250" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--3" value="Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=24;fontFamily=Verdana;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="414" y="250" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--4" value="Database" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=24;fontFamily=Verdana;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="647" y="250" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;flowAnimation=1;" edge="1" parent="1" source="qCatNY5HRqoVfFUYNV9--6" target="qCatNY5HRqoVfFUYNV9--8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--6" value="Postman" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="-49.790000000000006" y="294.5" width="69.79" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--7" value="Request&lt;br&gt;localhost:8080" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="290" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--8" value="UserRequestController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;fontFamily=Verdana;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="185" y="313.5" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;flowAnimation=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qCatNY5HRqoVfFUYNV9--11" target="qCatNY5HRqoVfFUYNV9--13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="380" />
+              <mxPoint x="150" y="380" />
+              <mxPoint x="150" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--10" value="Call with RestTemplate" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;labelBackgroundColor=none;labelBorderColor=none;html=1;" vertex="1" connectable="0" parent="qCatNY5HRqoVfFUYNV9--9">
+          <mxGeometry x="-0.1717" relative="1" as="geometry">
+            <mxPoint x="-93" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--11" value="UserRequestSenderService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;fontFamily=Verdana;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="435" y="313.5" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;flowAnimation=1;" edge="1" parent="1" source="qCatNY5HRqoVfFUYNV9--13" target="qCatNY5HRqoVfFUYNV9--14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--13" value="UserResponseController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;fontFamily=Verdana;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="185" y="400" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--14" value="UserResponseService" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;fontFamily=Verdana;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="435" y="400" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--15" value="MemoryDataBase" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=9;fontFamily=Verdana;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="662" y="355" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;flowAnimation=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qCatNY5HRqoVfFUYNV9--8" target="qCatNY5HRqoVfFUYNV9--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qCatNY5HRqoVfFUYNV9--17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;flowAnimation=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qCatNY5HRqoVfFUYNV9--14" target="qCatNY5HRqoVfFUYNV9--15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
